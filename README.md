@@ -1,3 +1,4 @@
+```markdown
 # Análisis de Rentabilidad de Planes de Telecomunicaciones - Megaline
 
 📋 Descripción del Proyecto

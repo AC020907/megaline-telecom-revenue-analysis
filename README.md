@@ -1,69 +1,69 @@
-```markdown
-# Análisis de Rentabilidad de Planes de Telecomunicaciones - Megaline
+#  Análisis de Ingresos de Planes Telefónicos
 
-📋 Descripción del Proyecto
-Este proyecto analiza la rentabilidad de dos planes de prepago ofrecidos por el operador de telecomunicaciones Megaline: Surf y Ultimate. El objetivo es determinar cuál plan genera mayores ingresos para optimizar la estrategia de marketing y asignación presupuestaria.
+## Descripción del proyecto
 
-🎯 Objetivos
-Analizar comportamiento de usuarios por plan (llamadas, SMS, datos)
-Calcular ingresos mensuales considerando tarifas base y excedentes
-Comparar rentabilidad entre planes Surf y Ultimate
-Realizar pruebas estadísticas para validar diferencias significativas
-Proporcionar recomendaciones estratégicas basadas en evidencia
-📊 Conjunto de Datos
-Período de análisis: Año 2018  
-Muestra: 500 clientes de Megaline
+Este proyecto analiza el comportamiento de clientes de una compañía de telecomunicaciones con el objetivo de comparar dos planes móviles y determinar cuál genera mayores ingresos.
 
-Estructura de datos:
-Usuarios (megaline_users.csv):
-- Información demográfica y plan contratado
-- Fechas de registro y cancelación
+El análisis incluye limpieza de datos, exploración estadística y visualizaciones para identificar patrones de consumo y validar hipótesis relacionadas con llamadas, mensajes, uso de internet e ingresos mensuales.
 
-Llamadas (megaline_calls.csv):
-- 137,735 registros de llamadas
-- Duración y fechas de cada llamada
+## Funcionalidades del análisis
 
-Mensajes (megaline_messages.csv):
-- 76,051 registros de SMS
-- Fechas de envío por usuario
+- **Limpieza y preparación de datos**
+  - Corrección de tipos de datos
+  - Unión de múltiples datasets
+  - Tratamiento de valores ausentes
 
-Internet (megaline_internet.csv):
-- 104,825 sesiones de navegación
-- Consumo en MB por sesión
+- **Análisis exploratorio (EDA)**
+  - Consumo de llamadas
+  - Uso de mensajes y datos móviles
+  - Comparación de ingresos por plan
+  - Distribución del comportamiento de usuarios
 
-Planes (megaline_plans.csv):
-- Detalles de tarifas y límites incluidos
+- **Análisis estadístico**
+  - Pruebas de hipótesis
+  - Comparación de ingresos promedio
+  - Diferencias entre grupos de usuarios
 
-🛠️ Tecnologías Utilizadas
-Python 3.9+
-Pandas: Manipulación y análisis de datos
-NumPy: Cálculos numéricos y redondeo
-Matplotlib: Visualización de datos
-SciPy: Pruebas estadísticas
-Jupyter Notebook: Entorno de desarrollo
-📈 Principales Hallazgos
-Comparación de Planes
-Métrica	Plan Surf	Plan Ultimate
-Tarifa mensual	$20 USD	$70 USD
-Ingreso promedio	$60.42 USD	$72.25 USD
-Desviación estándar	$53.60 USD	$11.04 USD
-Minutos incluidos	500 min	3,000 min
-Mensajes incluidos	50 SMS	1,000 SMS
-Datos incluidos	15 GB	30 GB
-Patrones de Comportamiento
-Plan Surf:
-- Usuarios casuales con consumo impredecible
-- Alta variabilidad en ingresos
-- Frecuentes excedentes que generan cargos adicionales
+- **Visualizaciones**
+  - Histogramas
+  - Boxplots
+  - Gráficos comparativos
+  - Distribuciones de consumo
 
-Plan Ultimate:
-- Usuarios empresariales/formales
-- Consumo más estable y predecible
-- Mejor planificación del uso de servicios
+## Tecnologías utilizadas
 
-🔧 Metodología de Análisis
-1. Limpieza de Datos
-Conversión de tipos: Fechas a formato datetime
-Filtrado de llamadas: Eliminación de llamadas con duración 0
-Redondeo de minutos: Aplicación de np.ceil() por llamada individual
-**
+- [Python 3](https://www.python.org/)
+- [Pandas](https://pandas.pydata.org/) – análisis y manipulación de datos
+- [NumPy](https://numpy.org/) – operaciones numéricas
+- [Matplotlib](https://matplotlib.org/) – visualización de datos
+- [SciPy](https://scipy.org/) – pruebas estadísticas
+- [Jupyter Notebook](https://jupyter.org/) – entorno de desarrollo
+
+## Estructura del proyecto
+
+Cómo ejecutar el proyecto localmente
+
+Clona el repositorio:
+
+git clone <URL_DEL_REPOSITORIO>
+cd <NOMBRE_DEL_REPOSITORIO>
+
+2. Crea y activa un entorno virtual:
+   ```bash
+   python -m venv env
+   source env/bin/activate   # macOS/Linux
+   env\Scripts\activate      # Windows
+
+Instala las dependencias:
+
+pip install pandas numpy matplotlib scipy jupyter
+
+Ejecuta Jupyter Notebook:
+
+jupyter notebook
+Abre el archivo .ipynb
+Principales conclusiones
+Uno de los planes genera ingresos promedio significativamente mayores.
+El comportamiento de consumo cambia dependiendo del tipo de usuario.
+Existen diferencias importantes en el uso de llamadas, mensajes e internet.
+Las pruebas estadísticas permitieron validar diferencias relevantes entre grupos.

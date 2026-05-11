@@ -63,7 +63,11 @@ Ejecuta Jupyter Notebook:
 jupyter notebook
 Abre el archivo .ipynb
 Principales conclusiones
-Uno de los planes genera ingresos promedio significativamente mayores.
-El comportamiento de consumo cambia dependiendo del tipo de usuario.
-Existen diferencias importantes en el uso de llamadas, mensajes e internet.
-Las pruebas estadísticas permitieron validar diferencias relevantes entre grupos.
+
+- Uno de los planes genera ingresos promedio significativamente mayores.
+
+- El comportamiento de consumo cambia dependiendo del tipo de usuario.
+
+- Existen diferencias importantes en el uso de llamadas, mensajes e internet.
+
+- Las pruebas estadísticas permitieron validar diferencias relevantes entre grupos.
